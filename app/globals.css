@@ -21,7 +21,66 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .elementMenu {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    p {
+      margin: 0px;
+    }
+  }
+
+  .elementMenu:nth-of-type(2) {
+    background-color: black;
+    p {
+      color: #ff1b43;
+    }
+  }
+  .elementMenu:hover .perspectiveText {
+    transform: rotateX(90deg);
+    p:nth-of-type(1) {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    p:nth-of-type(2) {
+      opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  .perspectiveText {
+    transform-style: preserve-3d;
+    transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+
+    p {
+      transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+      pointer-events: none;
+      text-transform: uppercase;
+    }
+  }
+  .perspectiveText > p:nth-of-type(2) {
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotateX(-90deg) translateY(9px);
+    opacity: 0;
+  }
+
+  .linkMenu {
+    perspective: 120px;
+    perspective-origin: bottom;
+  }
+
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    -webkit-border-radius: 1ex;
   }
 }
