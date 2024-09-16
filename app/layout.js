@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
         <main>{children}</main>
