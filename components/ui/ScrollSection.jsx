@@ -1,30 +1,11 @@
 "use client";
 
-import Lenis from "@studio-freight/lenis";
-import { useEffect, useRef } from "react";
+import useScrollTo from "@/app/hooks/useScrollTo";
+import { useRef } from "react";
 
 function ScrollSection({ to, label, className }) {
   const lenisRef = useRef(null);
-  useEffect(() => {
-    lenisRef.current = new Lenis({
-      duration: 1,
-      immediate: true,
-      easing: (t) => {
-        return t;
-      },
-    });
-
-    function raf(time) {
-      lenisRef.current.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenisRef.current.destroy();
-    };
-  }, [lenisRef]);
+  useScrollTo(lenisRef);
 
   function handleScroll(to) {
     if (lenisRef.current) {
