@@ -17,7 +17,35 @@ function MaskText({ phrases }) {
     }),
   };
 
-  return <div></div>;
+  return (
+    <div
+      ref={body}
+      className="text-[3.0vw] md:text-[3.5vw] text-white"
+      aria-live="polite"
+    >
+      {phrases.map((phrase, index) => {
+        return (
+          <div key={index} className="overflow-hidden relative">
+            <motion.p
+              className="absolute text-white opacity-20 hyphens-auto"
+              aria-hidden="true"
+            >
+              {phrase}
+            </motion.p>
+            <motion.p
+              className="hyphens-auto"
+              custom={index}
+              variants={animation}
+              initial="initial"
+              animate={isInView ? "enter" : ""}
+            >
+              {phrase}
+            </motion.p>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default MaskText;
