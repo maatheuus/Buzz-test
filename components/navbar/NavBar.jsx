@@ -1,4 +1,4 @@
-import { links } from "../menu/links";
+import { links } from "../menu/utils/links";
 import ScrollSection from "../ui/ScrollSection";
 import Logo from "./Logo";
 
