@@ -8,8 +8,10 @@ import HeroSection from "@/components/hero/components/HeroSection";
 import TimelineContainer from "@/components/timeline/components/TimelineContainer";
 import Footer from "@/components/footer/components/Footer";
 import Divider from "@/components/ui/Divider";
+import useScaleX from "./hooks/useScaleX";
 
 export default function Home() {
+  const scaleX = useScaleX(ref);
   return (
     <>
       <main>
@@ -34,11 +36,9 @@ export default function Home() {
           <TimelineContainer>
             <motion.div
               className="sticky left-0 right-0 h-1 rounded-full overflow-hidden bottom-24 bg-red-700 z-50"
-              style={
-                {
-                  // scaleX,
-                }
-              }
+              style={{
+                scaleX,
+              }}
             />
           </TimelineContainer>
         </div>
