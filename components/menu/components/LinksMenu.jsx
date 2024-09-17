@@ -1,6 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
-import { perspective } from "./anim";
-import { links } from "./links";
+import { perspective } from "../utils/anim";
+import { links } from "../utils/links";
 import ScrollSection from "@/components/ui/ScrollSection";
 
 function LinksMenu({ setIsActive }) {

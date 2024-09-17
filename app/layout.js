@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Head from "next/head";
-import Header from "@/components/navbar/Header";
+import Header from "@/components/navbar/components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning={true}
       >
         <Header />
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );

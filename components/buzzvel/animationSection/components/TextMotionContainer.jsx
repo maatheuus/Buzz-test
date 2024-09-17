@@ -1,5 +1,6 @@
-import { motion, useTransform } from "framer-motion";
+"use client";
 
+import { motion, useTransform } from "framer-motion";
 import ContainerDynamicSection from "../ContainerDynamicTextSection";
 
 function TextMotionContainer({ scrollYProgress }) {

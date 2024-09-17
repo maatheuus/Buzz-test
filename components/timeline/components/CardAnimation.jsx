@@ -1,7 +1,9 @@
+"use client";
+
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-function CardAnimation({ children }) {
+function CardAnimation({ className, children }) {
   const ref = useRef();
 
   const inView = useInView(ref, {

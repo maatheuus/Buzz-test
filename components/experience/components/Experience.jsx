@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useMotionValue } from "framer-motion";
 import { useState } from "react";
 import Card from "./Card";
@@ -39,9 +41,8 @@ function Experience() {
       transition={{ duration: 0.5 }}
       className="relative block h-auto overflow-hidden pb-12"
     >
-      <div className="my-12 p-10">
+      <div className="my-12 p-10" id="experience-heading">
         <motion.h1
-          id="experience-heading"
           initial={{ opacity: 0, x: "-20%" }}
           animate={{ opacity: 1, x: "0%" }}
           transition={{

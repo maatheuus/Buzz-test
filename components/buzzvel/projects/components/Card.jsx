@@ -1,11 +1,10 @@
-import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 function Card({ card }) {
   return (
-    <motion.article className="shadow-2xl h-auto rounded-lg bg-white p-4 sm:p-6 flex flex-col gap-y-3 sm:gap-y-5">
+    <article className="shadow-2xl h-auto rounded-lg bg-white p-4 sm:p-6 flex flex-col gap-y-3 sm:gap-y-5">
       <h1 className="text-lg sm:text-2xl font-serif leading-relaxed text-stone-900 hover:text-stone-700 transition-colors duration-300 hover:animate-pulse">
         <Link
           target="_blank"
@@ -50,7 +49,7 @@ function Card({ card }) {
           </p>
         </div>
       </div>
-    </motion.article>
+    </article>
   );
 }
 

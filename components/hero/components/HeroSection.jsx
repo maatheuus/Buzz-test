@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import bg from "@/public/images/others/background.jpg";
-import useAnimateText from "./useAnimateText";
+import useAnimateText from "../hooks/useAnimateText";
 import { useRef } from "react";
 
 function HeroSection() {
