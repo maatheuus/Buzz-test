@@ -1,6 +1,6 @@
 import { motion, useTransform } from "framer-motion";
 
-import ContainerDynamicSection from "../textAnimation/ContainerDynamicTextSection";
+import ContainerDynamicSection from "../ContainerDynamicTextSection";
 
 function TextMotionContainer({ scrollYProgress }) {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);

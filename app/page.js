@@ -1,4 +1,4 @@
-import AnimatedContentSection from "@/components/buzzvel/components/AnimatedContentSection";
+import AnimatedContentSection from "@/components/buzzvel/animationSection/components/AnimatedContentSection";
 import Experience from "@/components/experience/components/Experience";
 import HeroSection from "@/components/hero/HeroSection";
 
