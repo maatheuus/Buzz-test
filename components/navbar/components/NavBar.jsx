@@ -1,5 +1,5 @@
-import { links } from "../menu/utils/links";
-import ScrollSection from "../ui/ScrollSection";
+import { links } from "../../menu/utils/links";
+import ScrollSection from "../../ui/ScrollSection";
 import Logo from "./Logo";
 
 function NavBar() {
