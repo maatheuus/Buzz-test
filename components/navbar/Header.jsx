@@ -1,4 +1,4 @@
-import Menu from "../menu/Menu";
+import Menu from "../menu/components/Menu";
 import Navbar from "./Navbar";
 
 function Header() {
