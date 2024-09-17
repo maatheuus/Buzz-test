@@ -1,9 +1,13 @@
+import gsap from "gsap-trial";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap-trial/dist/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function useAnimateText(firstText, secondText, slider) {
+  let xPercent = 0;
+  let direction = -1;
+
   useGSAP(() => {
     gsap.to(slider.current, {
       scrollTrigger: {
