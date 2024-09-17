@@ -1,3 +1,5 @@
+"use client";
+
 import Lenis from "@studio-freight/lenis";
 import { useEffect, useRef } from "react";
 

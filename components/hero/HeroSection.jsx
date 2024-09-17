@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import bg from "@/public/images/others/background.jpg";
 import useAnimateText from "./useAnimateText";
