@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from "./Button";
 import { AnimatePresence, motion } from "framer-motion";
 import LinksMenu from "./LinksMenu";
-import { menu } from "../anim";
+import { menu } from "../utils/anim";
 
 export default function Menu() {
   const [isActive, setIsActive] = useState(false);
@@ -24,12 +24,12 @@ export default function Menu() {
         </AnimatePresence>
       </motion.menu>
 
-      {/* <Button
+      <Button
         isActive={isActive}
         toggleMenu={() => {
           setIsActive(!isActive);
         }}
-      /> */}
+      />
     </div>
   );
 }
