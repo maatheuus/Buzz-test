@@ -5,7 +5,7 @@ function IntroSection() {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
 
   return (
-    <motion.div
+    <motion.section
       id="buzzvel"
       aria-labelledby="buzzvel-heading"
       style={{ scale, rotate }}
@@ -14,7 +14,7 @@ function IntroSection() {
       <h2 className="text-4xl md:text-5xl font-bold font-serif">Why</h2>
       <h1 className="text-8xl md:text-9xl font-bold font-serif">Buzzvel</h1>
       <span className="text-3xl font-bold font-serif">?</span>
-    </motion.div>
+    </motion.section>
   );
 }
 
