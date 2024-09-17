@@ -4,6 +4,7 @@ import FeaturedProjectsSection from "@/components/buzzvel/projects/components/Fe
 import Experience from "@/components/experience/components/Experience";
 import HeroSection from "@/components/hero/HeroSection";
 import TimelineContainer from "@/components/timeline/components/TimelineContainer";
+import Footer from "@/components/footer/components/Footer";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
           />
         </TimelineContainer>
       </div>
+
+      <Footer />
     </>
   );
 }
