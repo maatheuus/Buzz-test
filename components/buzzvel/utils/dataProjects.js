@@ -3,14 +3,14 @@ import missCan from "@/public/images/buzz-projects/miss-can.png";
 import thinkFeridas from "@/public/images/buzz-projects/think-feridas.png";
 import viplant from "@/public/images/buzz-projects/viplant.png";
 
-const defaultURL = "https://buzzvel.com/portfolio";
+const DEFAULT_URL = "https://buzzvel.com/portfolio";
 
-export const cards = [
+export const CARDS_DATA = [
   {
     id: 1,
     src: comaOuLeve,
     title: "Coma ou leve",
-    url: `${defaultURL}/coma-ou-leve`,
+    url: `${DEFAULT_URL}/coma-ou-leve`,
     description: {
       challenge:
         "Coma ou Leve needed to automate its ordering process, especially during peak seasons like Christmas and New Year when orders can reach 1,000 per day. The goal was to streamline the system without compromising the customer experience.",
@@ -22,7 +22,7 @@ export const cards = [
     id: 2,
     src: missCan,
     title: "Miss Can",
-    url: `${defaultURL}/miss-can`,
+    url: `${DEFAULT_URL}/miss-can`,
     description: {
       challenge:
         "Miss Can needed an online store that would allow them to sell their products and expand into the international market, starting to export canned foods outside of Portugal.",
@@ -34,7 +34,7 @@ export const cards = [
     id: 3,
     src: thinkFeridas,
     title: "Think Feridas",
-    url: `${defaultURL}/thinkferidas`,
+    url: `${DEFAULT_URL}/thinkferidas`,
     description: {
       challenge:
         "Create an intuitive, easy-to-navigate application to streamline wound care.",
@@ -46,7 +46,7 @@ export const cards = [
     id: 4,
     src: viplant,
     title: "Viplant",
-    url: `${defaultURL}/viplant`,
+    url: `${DEFAULT_URL}/viplant`,
     description: {
       challenge:
         "The challenge was to go beyond an online sales solution, creating a virtual store that would provide customers with the same attention and dedication as VIPLANT physical stores.",
