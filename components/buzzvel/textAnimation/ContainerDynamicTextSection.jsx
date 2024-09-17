@@ -10,14 +10,14 @@ import Paragraph from "./Paragraph";
 
 function ContainerDynamicTextSection() {
   return (
-    <div className="bg-black">
+    <section className="bg-black">
       <div className="h-[50vh]">
         <Paragraph paragraph={paragraph} />
         <Paragraph paragraph={paragraphTwo} />
         <Paragraph paragraph={paragraphThree} />
         <Paragraph paragraph={paragraphFour} />
       </div>
-    </div>
+    </section>
   );
 }
 
