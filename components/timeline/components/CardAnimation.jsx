@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-function CardAnimation() {
+function CardAnimation({ children }) {
   const ref = useRef();
 
   const inView = useInView(ref, {
@@ -17,7 +17,19 @@ function CardAnimation() {
       y: 50,
     },
   };
-  return <div></div>;
+
+  return (
+    <motion.div
+      animate={inView ? "visible" : "hidden"}
+      aria-hidden={inView}
+      variants={variants}
+      transition={{ duration: 2, ease: "easeOut" }}
+      ref={ref}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
 }
 
 export default CardAnimation;
