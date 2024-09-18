@@ -1,5 +1,5 @@
 import Menu from "../../menu/components/Menu";
-import Navbar from "./Navbar";
+import Navbar from "@/components/navbar/components/NavBar";
 
 function Header() {
   return (

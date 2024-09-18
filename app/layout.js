@@ -16,22 +16,18 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Home",
-  description: "page generated for technical testing",
+  description: "Page generated for technical testing",
+  openGraph: {
+    description: "Page generated for technical testing.",
+    url: "http://localhost:3000/",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta
-          property="og:description"
-          content="page generated for technical testing."
-        />
-        <meta property="og:url" content="http://localhost:3000/" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true}
