@@ -35,35 +35,33 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <main>
-        <div className="relative">
-          <HeroSection />
-          <Experience />
-        </div>
+      <div className="relative">
+        <HeroSection />
+        <Experience />
+      </div>
 
-        <div className="relative h-[200dvh]">
-          <AnimatedContentSection />
-        </div>
+      <div className="relative h-[200dvh]">
+        <AnimatedContentSection />
+      </div>
 
-        <Divider className="h-[130dvh] md:h-[300dvh]" />
+      <Divider className="h-[130dvh] md:h-[300dvh]" />
 
-        <div className="bg-white relative h-[200dvh]">
-          <FeaturedProjectsSection />
-        </div>
+      <div className="bg-white relative h-[200dvh]">
+        <FeaturedProjectsSection />
+      </div>
 
-        <Divider className="h-[140dvh] bg-white" />
+      <Divider className="h-[140dvh] bg-white" />
 
-        <div ref={ref} className="relative">
-          <TimelineContainer>
-            <motion.div
-              className="sticky left-0 right-0 h-1 rounded-full overflow-hidden bottom-24 bg-red-700 z-50"
-              style={{
-                scaleX,
-              }}
-            />
-          </TimelineContainer>
-        </div>
-      </main>
+      <div ref={ref} className="relative">
+        <TimelineContainer>
+          <motion.div
+            className="sticky left-0 right-0 h-1 rounded-full overflow-hidden bottom-24 bg-red-700 z-50"
+            style={{
+              scaleX,
+            }}
+          />
+        </TimelineContainer>
+      </div>
 
       <Footer />
     </>
