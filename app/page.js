@@ -1,6 +1,10 @@
 "use client";
 
+import { useRef } from "react";
 import { motion } from "framer-motion";
+import useScaleX from "./hooks/useScaleX";
+import useScrollPage from "./hooks/useScrollPage";
+
 import AnimatedContentSection from "@/components/buzzvel/animationSection/components/AnimatedContentSection";
 import FeaturedProjectsSection from "@/components/buzzvel/projects/components/FeaturedProjectsSection";
 import Experience from "@/components/experience/components/Experience";
@@ -8,10 +12,12 @@ import HeroSection from "@/components/hero/components/HeroSection";
 import TimelineContainer from "@/components/timeline/components/TimelineContainer";
 import Footer from "@/components/footer/components/Footer";
 import Divider from "@/components/ui/Divider";
-import useScaleX from "./hooks/useScaleX";
 
 export default function Home() {
+  const ref = useRef();
   const scaleX = useScaleX(ref);
+  useScrollPage();
+
   return (
     <>
       <main>
