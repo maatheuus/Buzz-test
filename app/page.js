@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import useScaleX from "./hooks/useScaleX";
 import useScrollPage from "./hooks/useScrollPage";
@@ -53,7 +53,7 @@ export default function Home() {
 
         <Divider className="h-[140dvh] bg-white" />
 
-        <div className="relative">
+        <div ref={ref} className="relative">
           <TimelineContainer>
             <motion.div
               className="sticky left-0 right-0 h-1 rounded-full overflow-hidden bottom-24 bg-red-700 z-50"

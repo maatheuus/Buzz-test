@@ -8,7 +8,7 @@ import useParallax from "../hooks/useParallax";
 function CardTimeline({ data }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
+  const y = useParallax(scrollYProgress, 400);
 
   return (
     <div className="h-screen flex justify-center items-center relative snap-center test-perspective px-4 md:px-0">
