@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import useScaleX from "./hooks/useScaleX";
 import useScrollPage from "./hooks/useScrollPage";
 
@@ -12,14 +12,29 @@ import HeroSection from "@/components/hero/components/HeroSection";
 import TimelineContainer from "@/components/timeline/components/TimelineContainer";
 import Footer from "@/components/footer/components/Footer";
 import Divider from "@/components/ui/Divider";
+import Preloader from "@/components/loader/components/Preloader";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
   const ref = useRef();
   const scaleX = useScaleX(ref);
   useScrollPage();
 
+  useEffect(() => {
+    (() => {
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
+
   return (
     <>
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
       <main>
         <div className="relative">
           <HeroSection />
