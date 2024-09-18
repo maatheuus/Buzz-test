@@ -7,8 +7,8 @@ COPY package.json package-lock.json ./
 RUN npm install
 
 COPY . ./
-COPY next.config.js .sentryclirc app-pocketup-fr.json tsconfig.json sentry.* ./
-COPY tailwind.config.js ecosystem.config.js postcss.config.js ./
+COPY next.config.mjs ./
+COPY tailwind.config.js postcss.config.mjs ./
 
 RUN npm run build
 
