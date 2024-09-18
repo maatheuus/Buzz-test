@@ -13,7 +13,7 @@ function HorizontalScrollCarousel() {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-90%"]);
 
   return (
-    <div ref={targetRef} className="h-[300vh]">
+    <div ref={targetRef} className="h-[300dvh]">
       <div className="sticky top-0 flex items-start pt-12 h-screen overflow-hidden md:pt-0 md:items-center">
         <motion.div
           style={{ x }}

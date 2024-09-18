@@ -6,7 +6,7 @@ function TimelineContainer({ children }) {
     <section
       id="timeline"
       aria-labelledby="timeline-heading"
-      className="bg-black relative"
+      className="bg-black relative h-screen"
     >
       {timeLineData.map((items) => (
         <CardTimeline key={items.id} data={items} />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import useScaleX from "./hooks/useScaleX";
 import useScrollPage from "./hooks/useScrollPage";

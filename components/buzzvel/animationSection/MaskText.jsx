@@ -20,11 +20,7 @@ function MaskText({ phrases }) {
   };
 
   return (
-    <div
-      ref={body}
-      className="text-[3.0vw] md:text-[3.5vw] text-white"
-      aria-live="polite"
-    >
+    <div ref={body} className="text-[3.5vw] text-white" aria-live="polite">
       {phrases.map((phrase, index) => {
         return (
           <div key={index} className="overflow-hidden relative">

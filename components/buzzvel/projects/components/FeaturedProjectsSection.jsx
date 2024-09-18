@@ -13,14 +13,14 @@ function FeaturedProjectsSection() {
     >
       <div className="py-8 flex-1 px-4 sm:py-16 sm:px-8">
         <motion.h1
-          initial={{ opacity: 0, x: "-20%" }}
+          initial={{ opacity: 0, x: "-50%" }}
           animate={{ opacity: 1, x: "0%" }}
           transition={{
-            duration: 1,
+            duration: 1.5,
             delay: 2.5,
           }}
           viewport={{ once: false }}
-          className="font-bold font-sans text-lg sm:text-3xl mb-2"
+          className="font-bold text-black font-sans text-lg sm:text-3xl mb-2"
         >
           Featured Projects
         </motion.h1>
@@ -31,7 +31,7 @@ function FeaturedProjectsSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
-              duration: 0.35,
+              duration: 0.45,
               delay: i / 6,
             }}
           >
